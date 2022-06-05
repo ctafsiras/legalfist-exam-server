@@ -14,6 +14,9 @@ const uri = `mongodb+srv://legalfist_mcq_db_user:${process.env.DB_PASS}@cluster0
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 
+// DB_USER=legalfist_mcq_db_user
+// DB_PASS=NVuEyXnL0x4cDScz
+
 const run = async () => {
     try {
         client.connect();
